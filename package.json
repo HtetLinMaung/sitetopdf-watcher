@@ -1,0 +1,35 @@
+{
+  "name": "sitetopdf-watcher",
+  "version": "1.0.0",
+  "description": "A tool to watch HTML file changes and convert them to PDF in real-time.",
+  "bin": {
+    "sitetopdf-watcher": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf index.html *.pdf *.css config.json",
+    "build": "tsc",
+    "test": "tsc && node index"
+  },
+  "keywords": [
+    "html-to-pdf",
+    "pdf-conversion",
+    "file-watching",
+    "nodejs"
+  ],
+  "author": "Htet Lin Maung <jsthtet96@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "express": "^4.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/sitetopdf-watcher.git"
+  }
+}
